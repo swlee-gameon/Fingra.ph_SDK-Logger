@@ -14,7 +14,7 @@
         <param name="ImmediateFlush" value="true" />
         <param name="Append" value="true" />
         <param name="Directory" value="/var/sdk_logs/"/>
-        <param name="Prefix" value="WAS.sdk_iphone_log." />
+        <param name="Prefix" value="${host.ipaddress}.sdk_iphone_log." />
         <param name="Suffix" value=".txt" />
         <param name="ScheduleType" value="DAILY" />
         <layout class="org.apache.log4j.PatternLayout">
@@ -25,7 +25,7 @@
         <param name="ImmediateFlush" value="true" />
         <param name="Append" value="true" />
         <param name="Directory" value="/var/sdk_logs/"/>
-        <param name="Prefix" value="WAS.sdk_android_log." />
+        <param name="Prefix" value="${host.ipaddress}.sdk_android_log." />
         <param name="Suffix" value=".txt" />
         <param name="ScheduleType" value="DAILY" />
         <layout class="org.apache.log4j.PatternLayout">

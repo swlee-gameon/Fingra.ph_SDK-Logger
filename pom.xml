@@ -14,9 +14,9 @@
             <url>http://repo.maven.apache.org/maven2/</url>
         </repository>
         <repository>
-            <id>log4j-datedFileAppender</id>
-            <name>datedFileAppender</name>
-            <url>http://maven.cloudhopper.com/repos/third-party/</url>      
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:${project.basedir}/repo</url>      
         </repository>
     </repositories>
     <properties>
@@ -28,10 +28,9 @@
     <dependencies>
         <!-- datedFileAppender -->
         <dependency>
-            <groupId>apache</groupId>
-            <artifactId>log4j-datedFileAppender</artifactId>
+            <groupId>biz.minaret</groupId>
+            <artifactId>datedFileAppender</artifactId>
             <version>1.0.2</version>
-            <scope>compile</scope>
         </dependency>
         <!-- Spring -->
         <dependency>
